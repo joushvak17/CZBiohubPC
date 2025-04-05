@@ -11,6 +11,7 @@ class Function(ABC):
         _type_: _description_
     """
 
+    @property
     @abstractmethod
     def name(self) -> str:
         """Returns the name of the function.
@@ -20,6 +21,7 @@ class Function(ABC):
         """
         pass
 
+    @property
     @abstractmethod
     def param_a_desc(self) -> str:
         """Returns the description of parameter A.
@@ -29,6 +31,7 @@ class Function(ABC):
         """
         pass
 
+    @property
     @abstractmethod
     def param_b_desc(self) -> str:
         """Returns the description of parameter B.
@@ -38,23 +41,23 @@ class Function(ABC):
         """
         pass
 
-    @abstractmethod
+    @property
     def default_param_a(self) -> float:
         """Returns the default value of parameter A.
 
         Returns:
             float: _description_
         """
-        pass
+        return 1.0
 
-    @abstractmethod
+    @property
     def default_param_b(self) -> float:
         """Returns the default value of parameter B.
 
         Returns:
             float: _description_
         """
-        pass
+        return 2.0
 
     @abstractmethod
     def calculate(self, x: float, a: float, b: float) -> float:

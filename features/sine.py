@@ -1,25 +1,22 @@
-import math
+import numpy as np
 from .base import Function
 
 
 class SineFunction(Function):
     """Sine function class."""
 
+    @property
     def name(self) -> str:
         return "Sine Wave"
 
+    @property
     def param_a_desc(self) -> str:
         return "Amplitude"
 
+    @property
     def param_b_desc(self) -> str:
         return "Angular Frequency"
 
-    def default_param_a(self) -> float:
-        return 1.0
-
-    def default_param_b(self) -> float:
-        return 1.0
-
     def calculate(self, x: float, a: float, b: float) -> float:
         """Calculates the y value for the Sine function, f(x) = A * sin(B * x)."""
-        return a * math.sin(b * x)
+        return a * np.sin(b * x)
