@@ -15,7 +15,7 @@ class SineFunction(Function):
 
     @property
     def param_b_desc(self) -> str:
-        return "Angular Frequency"
+        return "Frequency"
 
     def calculate(self, x: float, a: float, b: float) -> float:
         """Calculates the y value for the Sine function, f(x) = A * sin(B * x)."""
