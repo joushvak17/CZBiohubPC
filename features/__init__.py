@@ -1,5 +1,5 @@
 from .sine import SineFunction
 from .power import PowerFunction
+from .sawtooth import SawtoothFunction
 
-# TODO: Work on and add the Sawtooth function
-__all__ = ["SineFunction", "PowerFunction"]
+__all__ = ["SineFunction", "PowerFunction", "SawtoothFunction"]
