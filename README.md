@@ -1,2 +1,2 @@
 # CZBiohubPC
-CZ Biohub R&amp;D Engineer Programming Challenge (Joushva Kamble)
+CZ Biohub R&D Engineer Programming Challenge (Joushva Kamble)
