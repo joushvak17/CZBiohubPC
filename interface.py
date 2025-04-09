@@ -49,8 +49,12 @@ class Interface(tk.Tk):
             border_width=1,
             corner_radius=0,
         )
+        
+        # NOTE: Use pack propagate to prevent the frame from resizing and use fill="y"
+        # This line was added through LLM usage, first entry in the LLM Usage section of the README.md
         entry_frame.pack(side="left", fill="y", padx=5, pady=5)
         entry_frame.pack_propagate(False)
+        
         entry_label = ctk.CTkLabel(
             entry_frame,
             text="Entry Fields",
@@ -73,6 +77,7 @@ class Interface(tk.Tk):
         ).pack(anchor="w", padx=10, pady=1)
 
         # NOTE: Set the default function to the first one in the dictionary
+        # This line was added through LLM usage, second entry in the LLM Usage section of the README.md
         self.function_var = tk.StringVar(value=list(self.function_dict.keys())[0])
 
         function_option = ctk.CTkOptionMenu(
